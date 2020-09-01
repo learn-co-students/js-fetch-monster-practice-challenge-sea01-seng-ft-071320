@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Monstr</title>
-    <!-- <script src='js/index.js'></script> -->
-    <script src='js/demo.js'></script>
+    <!-- <script src="js/demo.js"></script> -->
   </head>
   <body>
     <h1>Monstr Inc.</h1>
-    <div id='create-monster'></div>
-    <div id='monster-container'></div>
+    <div id="create-monster"></div>
+    <form class="add-monster-form">
+      <h3>Create a monster!</h3>
+
+      <input
+        type="text"
+        name="name"
+        value=""
+        placeholder="Enter the spooky name..."
+      />
+      <br />
+      <input
+        type="number"
+        name="text"
+        value=""
+        placeholder="Enter the monster's age "
+      />
+      <input
+        type="text"
+        name="description"
+        value=""
+        placeholder="Enter the monster's description "
+      />
+      <br />
+      <input
+        type="submit"
+        name="submit"
+        value="Create New Monster"
+        class="submit"
+      />
+    </form>
+
+    <div id="monster-container"></div>
     <button id="back"><=</button>
     <button id="forward">=></button>
+    <script defer src="js/index.js"></script>
   </body>
 </html>
